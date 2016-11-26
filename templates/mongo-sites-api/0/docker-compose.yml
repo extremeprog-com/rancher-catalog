@@ -12,9 +12,11 @@ msa-datavolume:
   labels:
     io.rancher.container.pull_image: always
     io.rancher.container.hostname_override: container_name
+    io.rancher.container.start_once: true
   tty: true
   command: /bin/true
+  net: none
   image: extremeprog/mongo-sites-api
   volumes:
-  - /var/lib/mongo-sites-api/mongodb:/var/lib/mongodb
+  - /var/lib/mongodb
   stdin_open: true
