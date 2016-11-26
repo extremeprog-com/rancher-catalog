@@ -1,3 +1,5 @@
+.catalog:
+  version: 1
 msa-primary:
   scale: 1
   version: 1.1
@@ -10,5 +12,5 @@ msa-primary:
     request_line: GET "/" "HTTP/1.0"
     healthy_threshold: 2
     response_timeout: 2000
-msa-dataolume:
+msa-datavolume:
   scale: 1
