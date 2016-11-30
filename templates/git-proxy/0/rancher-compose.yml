@@ -6,6 +6,6 @@
       label: Private Key
       required: true
       type: multiline
-rancher-github-proxy:
+git-proxy:
   scale: 1
   version: 1.1
