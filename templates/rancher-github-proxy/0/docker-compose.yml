@@ -3,5 +3,5 @@ rancher-github-proxy:
     io.rancher.container.pull_image: always
     io.rancher.container.hostname_override: container_name
   tty: true
-  image: extremeprog/rancher-github-proxy
+  image: extremeprog/git-proxy
   stdin_open: true
