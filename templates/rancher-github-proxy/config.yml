@@ -1,0 +1,4 @@
+name: "Rancher Proxy Container for Github"
+description: "Proxy container for working with github private repos."
+version: "1.1"
+category: Utils
