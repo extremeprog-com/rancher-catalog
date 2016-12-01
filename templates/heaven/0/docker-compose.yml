@@ -1,19 +1,14 @@
 heaven-frontend:
+  ports:
+  - 80:80/tcp
+  - 443:443/tcp
+  environment:
+    CONTAINER_DNS_TEMPLATE: $$name.$$name
+    DNS_RESOLVER: 169.254.169.250
   labels:
     io.rancher.container.pull_image: always
     io.rancher.container.hostname_override: container_name
   tty: true
-  environment:
-      DNS_RESOLVER: 169.254.169.250
-      CONTAINER_DNS_TEMPLATE: ${CONTAINER_DNS_TEMPLATE}
   image: extremeprog/heaven
   stdin_open: true
-balancer:
-  ports:
-  - 443:443/tcp
-  - 80:80
-  tty: true
-  image: rancher/load-balancer-service
-  links:
-  - heaven:heaven
-  stdin_open: true
+
