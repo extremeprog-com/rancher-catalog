@@ -24,4 +24,4 @@ msa-datavolume:
 heaven-backend:
   image: rancher/dns-service
   links:
-  - mongo-sites-api:mongo-sites-api
+  - mongo-sites-api
