@@ -12,5 +12,3 @@ msa-primary:
     request_line: GET "/" "HTTP/1.0"
     healthy_threshold: 2
     response_timeout: 2000
-msa-datavolume:
-  scale: 1
