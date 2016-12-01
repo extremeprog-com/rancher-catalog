@@ -9,4 +9,3 @@
 proxy:
   scale: 1
   retain_ip: true
-  version: 1.1
