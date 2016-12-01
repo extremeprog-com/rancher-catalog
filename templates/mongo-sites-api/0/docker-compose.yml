@@ -21,3 +21,7 @@ msa-datavolume:
   volumes:
   - /var/lib/mongodb
   stdin_open: true
+heaven-backend:
+  image: rancher/dns-service
+  links:
+  - mongo-sites-api:mongo-sites-api
