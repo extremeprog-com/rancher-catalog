@@ -1,4 +1,4 @@
-msa-primary:
+mongo-sites-api:
   labels:
     io.rancher.sidekicks: msa-datavolume
     io.rancher.container.pull_image: always
