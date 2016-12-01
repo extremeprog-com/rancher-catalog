@@ -6,6 +6,6 @@
       label: "Container's DNS template"
       required: true
       type: string
-      default: $name.$name
+      default: heaven-backend.$name
 heaven-frontend:
   scale: 1

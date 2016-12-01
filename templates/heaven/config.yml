@@ -1,4 +1,4 @@
 name: "Heaven (based on Nginx)"
-description: "HTTP balancer for simple docker deployments named $container_name.domain.com. Just Add DNS record '* CNAME domain.com.' or '* IN A 123.123.123.123' that points to this container, and enjoy sites by address container_name.domain.com. Apps should listen port 80 inside container."
+description: "HTTP balancer for simple docker deployments. See your sites by addresses container_name.domain.com or stack_name.domain.com. Just Add DNS record '* CNAME domain.com.' or '* IN A 123.123.123.123' that points to this container, than add service alias 'heaven-backend' for each stack you want to export, and enjoy sites by address stack_name.domain.com. Apps should listen port 80 inside exported container."
 category: Utils
 version: 1

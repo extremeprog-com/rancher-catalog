@@ -3,7 +3,7 @@ heaven-frontend:
   - 80:80/tcp
   - 443:443/tcp
   environment:
-    CONTAINER_DNS_TEMPLATE: $$name.$$name
+    CONTAINER_DNS_TEMPLATE: ${CONTAINER_DNS_TEMPLATE}
     DNS_RESOLVER: 169.254.169.250
   labels:
     io.rancher.container.pull_image: always
