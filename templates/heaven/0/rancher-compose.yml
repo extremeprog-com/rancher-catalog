@@ -1,0 +1,13 @@
+.catalog:
+  version: 1
+  description: Add DNS record '* CNAME domain.com.' or '* IN A 123.123.123.123' that points to this container, and enjoy sites by address container_name.domain.com! Containers should listen port 80 (INSIDE container).
+  questions:
+    - variable: CONTAINER_DNS_TEMPLATE
+      description: Specify how heaven's nginx will find your services. Possible variables are $name and $version for patterns: $name.domain.com, $version.$name.domain.com, $name.subdomain.domain.com, $version.$name.subdomain.domain.com.
+      label: Container's DNS template
+      required: true
+      type: string
+      default: $name.$name
+git-proxy:
+  scale: 1
+  version: 1.1

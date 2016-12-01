@@ -6,7 +6,7 @@
       label: Private Key
       required: true
       type: multiline
-git-proxy:
+proxy:
   scale: 1
   retain_ip: true
   version: 1.1

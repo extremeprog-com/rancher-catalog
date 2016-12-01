@@ -1,9 +1,10 @@
-proxy:
+git-proxy:
   labels:
     io.rancher.container.pull_image: always
     io.rancher.container.hostname_override: container_name
   tty: true
   environment:
-      PRIVATE_KEY: ${PRIVATE_KEY}
-  image: extremeprog/git-proxy
+      DNS_RESOLVER: 169.254.169.250
+      CONTAINER_DNS_TEMPLATE: ${CONTAINER_DNS_TEMPLATE}
+  image: extremeprog/heaven
   stdin_open: true
