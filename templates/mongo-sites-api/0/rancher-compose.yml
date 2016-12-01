@@ -1,14 +1,6 @@
 .catalog:
   version: 1
-msa-primary:
+mongo-sites-api:
   scale: 1
-  version: 1.1
-  health_check:
-    port: 80
-    interval: 2000
-    initializing_timeout: 60000
-    unhealthy_threshold: 3
-    strategy: recreate
-    request_line: GET "/" "HTTP/1.0"
-    healthy_threshold: 2
-    response_timeout: 2000
+msa-datavolume:
+  scale: 1

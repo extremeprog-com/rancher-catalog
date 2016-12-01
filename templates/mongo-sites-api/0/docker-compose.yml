@@ -3,6 +3,7 @@ mongo-sites-api:
     io.rancher.sidekicks: msa-datavolume
     io.rancher.container.pull_image: always
     io.rancher.container.hostname_override: container_name
+    io.rancher.container.start_once: 'true'
   tty: true
   image: extremeprog/mongo-sites-api
   volumes_from:
