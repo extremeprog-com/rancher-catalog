@@ -1,4 +1,4 @@
 name: "Heaven (based on Nginx)"
-description: "HTTP balancer for simple docker deployments. Will export your containers as $container_name.domain.com"
+description: "HTTP balancer for simple docker deployments. Will export your containers as $container_name.domain.com. Add DNS record '* CNAME domain.com.' or '* IN A 123.123.123.123' that points to this container, and enjoy sites by address container_name.domain.com! Containers should listen port 80 (INSIDE container)."
 category: Utils
 version: 1
