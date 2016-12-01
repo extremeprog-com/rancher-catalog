@@ -2,8 +2,8 @@ mongo-sites-api:
   labels:
     io.rancher.sidekicks: msa-datavolume
     io.rancher.container.pull_image: always
+    io.rancher.scheduler.affinity:host_label_soft: heaven=1
     io.rancher.container.hostname_override: container_name
-    io.rancher.container.start_once: 'true'
   tty: true
   image: extremeprog/mongo-sites-api
   volumes_from:
@@ -12,15 +12,16 @@ mongo-sites-api:
 msa-datavolume:
   labels:
     io.rancher.container.pull_image: always
+    io.rancher.container.start_once: 'true'
     io.rancher.container.hostname_override: container_name
-    io.rancher.container.start_once: true
   tty: true
-  command: /bin/true
-  net: none
+  command:
+  - /bin/true
   image: extremeprog/mongo-sites-api
   volumes:
   - /var/lib/mongodb
   stdin_open: true
+  net: none
 heaven-backend:
   image: rancher/dns-service
   links:
