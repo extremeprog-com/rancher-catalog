@@ -7,3 +7,17 @@ proxy:
       PRIVATE_KEY: ${PRIVATE_KEY}
   image: extremeprog/git-proxy
   stdin_open: true
+add-rancher-dns-to-host:
+  labels:
+    io.rancher.scheduler.global: 'true'
+    io.rancher.container.pull_image: always
+  tty: true
+  command:
+  - bash
+  - -c
+  - while true; do (echo nameserver 169.254.169.250; cat /etc/resolv.conf.host | grep -v 169.254.169.250  ) > /etc/resolv.conf.dest; cp /etc/resolv.conf.dest /etc/resolv.conf.host; sleep 60; done
+  image: ubuntu:14.04.3
+  volumes:
+  - /etc/resolv.conf:/etc/resolv.conf.host
+  stdin_open: true
+
