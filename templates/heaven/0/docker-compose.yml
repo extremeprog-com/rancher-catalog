@@ -5,6 +5,7 @@ heaven-frontend:
   environment:
     CONTAINER_DNS_TEMPLATE: ${CONTAINER_DNS_TEMPLATE}
     DNS_RESOLVER: 169.254.169.250
+    ADDITIONAL_CONFIG: ${ADDITIONAL_CONFIG}
   labels:
     io.rancher.container.pull_image: always
     io.rancher.container.hostname_override: container_name
