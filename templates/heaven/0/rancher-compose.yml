@@ -7,5 +7,11 @@
       required: true
       type: string
       default: heaven-backend.$name
+    - variable: ADDITIONAL_CONFIG
+      description: "Add your own nginx config."
+      label: "Additional NGINX config"
+      required: false
+      type: multiline
+      default: ''
 heaven-frontend:
   scale: 1
