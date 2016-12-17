@@ -1,5 +1,4 @@
 name: "Proxy Container for Git"
-description: "Proxy container for use private github, bitbucket, ... without password. You can use private docker builds and add private rancher templates."
-version: "1.1"
+description: "Proxy container for applying private github, bitbucket, ... without password. You can use private docker builds and add private rancher templates."
+version: 1.0-rancher1
 category: Utils
-version: 1

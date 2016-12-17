@@ -1,5 +1,8 @@
 .catalog:
-  version: 1
+  name: "Git Proxy"
+  description: "Connect cattle and install services from private repos."
+  version: "1.0-rancher1"
+  uuid: git-proxy-0
   questions:
     - variable: PRIVATE_KEY
       description: Specify the private key to access to your private repo.
