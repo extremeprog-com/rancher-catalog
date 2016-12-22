@@ -4,8 +4,13 @@ Rancher-based catalog of extremeprog services.
 
 ## Contents
 
-Git Proxy (https://github.com/extremeprog-com/git-proxy)
+### Git Proxy 
+https://github.com/extremeprog-com/git-proxy
 
-Heaven (https://github.com/extremeprog-com/heaven)
+### Heaven
+Nginx container with LetsEncrypt SSL support for simple and fast Docker deployments.
 
-Mongo Sites API (https://github.com/extremeprog-com/mongo-sites-api)
+https://github.com/extremeprog-com/heaven
+
+### Mongo Sites API
+https://github.com/extremeprog-com/mongo-sites-api
