@@ -21,6 +21,22 @@ Nginx container with LetsEncrypt SSL support for simple and fast Docker deployme
 
 #### Usage
 
+Add to `docker-compose.yml`.
 
-### Mongo Sites API
-https://github.com/extremeprog-com/mongo-sites-api
+```
+heaven-backend:
+  image: rancher/dns-service
+  links:
+  - just
+```
+
+And to your container service declaration a label
+
+```
+your-service:
+  labels:
+    io.rancher.scheduler.affinity:host_label_soft: heaven=1
+```
+
+### Just
+A convenient tool for fast prototyping of web and mobile applications. Repo https://github.com/extremeprog-com/just.

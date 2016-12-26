@@ -1,6 +1,6 @@
 .catalog:
   version: 1
-mongo-sites-api:
+just:
   scale: 1
-msa-datavolume:
+just-datavolume:
   scale: 1
